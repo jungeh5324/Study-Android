@@ -3,12 +3,14 @@ package com.example.calculator;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.media.Image;
 import android.nfc.Tag;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         Button divisionButton = findViewById(R.id.divisionButton);
         EditText firstNum = findViewById(R.id.firstNum);
         EditText secondNum = findViewById(R.id.secondNum);
+        ImageView imageface = findViewById(R.id.imageface);
+        imageface.setImageResource(0);
         plusButton.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,6 +42,18 @@ public class MainActivity extends AppCompatActivity {
                     int num2 = Integer.parseInt(secondNum.getText().toString());
                     result = num1 + num2;
                     textView.setText(result+"");
+                    if(result<=9){
+                        imageface.setImageResource(0);
+                    }
+                    if(result>=10){
+                        imageface.setImageResource(R.drawable.ic_baseline_mood_red);
+                    }
+                    if(result>=20){
+                        imageface.setImageResource(R.drawable.ic_baseline_mood_green);
+                    }
+                    if(result>=30){
+                        imageface.setImageResource(R.drawable.ic_baseline_mood_blue);
+                    }
                 }
             }
         });
@@ -52,6 +68,19 @@ public class MainActivity extends AppCompatActivity {
                     int num2 = Integer.parseInt(secondNum.getText().toString());
                     result = num1 - num2;
                     textView.setText(result+"");
+                    ImageView imageface = findViewById(R.id.imageface);
+                    if(result<=9){
+                        imageface.setImageResource(0);
+                    }
+                    if(result >= 10){
+                        imageface.setImageResource(R.drawable.ic_baseline_mood_red);
+                    }
+                    if(result>=20){
+                        imageface.setImageResource(R.drawable.ic_baseline_mood_green);
+                    }
+                    if(result>=30){
+                        imageface.setImageResource(R.drawable.ic_baseline_mood_blue);
+                    }
                 }
             }
         });
@@ -66,6 +95,19 @@ public class MainActivity extends AppCompatActivity {
                     int num2 = Integer.parseInt(secondNum.getText().toString());
                     result = num1 * num2;
                     textView.setText(result+"");
+                    ImageView imageface = findViewById(R.id.imageface);
+                    if(result<=9){
+                        imageface.setImageResource(0);
+                    }
+                    if(result >= 10){
+                        imageface.setImageResource(R.drawable.ic_baseline_mood_red);
+                    }
+                    if(result>=20){
+                        imageface.setImageResource(R.drawable.ic_baseline_mood_green);
+                    }
+                    if(result>=30){
+                        imageface.setImageResource(R.drawable.ic_baseline_mood_blue);
+                    }
                 }
             }
         });
@@ -80,6 +122,19 @@ public class MainActivity extends AppCompatActivity {
                     int num2 = Integer.parseInt(secondNum.getText().toString());
                     result = num1 / num2;
                     textView.setText(result+"");
+                    ImageView imageface = findViewById(R.id.imageface);
+                    if(result<=9){
+                        imageface.setImageResource(0);
+                    }
+                    if(result >= 10){
+                        imageface.setImageResource(R.drawable.ic_baseline_mood_red);
+                    }
+                    if(result>=20){
+                        imageface.setImageResource(R.drawable.ic_baseline_mood_green);
+                    }
+                    if(result>=30){
+                        imageface.setImageResource(R.drawable.ic_baseline_mood_blue);
+                    }
                 }
             }
         });
