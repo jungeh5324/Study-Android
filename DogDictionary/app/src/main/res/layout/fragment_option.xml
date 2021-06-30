@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OptionFragment"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_centerInParent="true"
+        android:background="@color/optionMainColor" >
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:checked="true"
+            android:textSize="25sp"
+            android:fontFamily="@font/mung"
+            android:gravity="center"
+            android:text="BGM 끄기/켜기"
+            android:textColor="@color/black"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/optionTopAndBottomColor" >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|left"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/mung"
+            android:textColor="@color/black"
+            android:text="환경설정" />
+
+        <ImageButton
+            android:id="@+id/exitButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="25dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/xbutton" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/optionTopAndBottomColor" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:fontFamily="@font/mung"
+            android:text="만든사람 이메일\n123123123@123.com" />
+    </FrameLayout>
+</RelativeLayout>

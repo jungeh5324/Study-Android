@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackgroundColor"
+    tools:context=".SpeciesClick">
+
+    <TextView
+        android:id="@+id/dogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/mung"
+        android:textColor="#FF7F50"
+        android:textSize="40sp"
+        />
+
+    <ImageView
+        android:id="@+id/dogImage"
+
+        android:layout_width="match_parent"
+        android:padding="30dp"
+        android:scaleType="fitXY"
+        android:layout_height="300dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="120dp"
+        tools:srcCompat="@tools:sample/avatars" />
+</FrameLayout>

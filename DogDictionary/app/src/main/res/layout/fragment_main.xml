@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackgroundColor"
+    tools:context=".MainFragment">
+
+    <ImageView
+        android:id="@+id/dogFootView"
+        android:layout_width="505dp"
+        android:layout_height="454dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/dogfootfrint" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/mung"
+        android:gravity="center"
+        android:text="멍멍"
+        android:textColor="@color/mainBackgroundColor"
+        android:textSize="90sp" />
+
+    <Button
+        android:id="@+id/foodButton"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|right"
+        android:background="@drawable/ripple_effect"
+        android:layout_marginBottom="190dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fontFamily="@font/mung"
+        android:text="강아지 먹이"/>
+
+    <Button
+        android:id="@+id/speciesButton"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|left"
+        android:background="@drawable/ripple_effect"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="190dp"
+        android:fontFamily="@font/mung"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="강아지 종" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="top|left"
+        android:src="@drawable/topleft"
+        android:layout_marginTop="-39dp"
+        android:layout_marginLeft="-47dp"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="-45dp"
+        android:layout_marginBottom="-44dp"
+        android:src="@drawable/rightbottom" />
+
+    <Button
+        android:id="@+id/cncjsButton"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ripple_effect"
+        android:layout_gravity="left|bottom"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="130dp"
+        android:fontFamily="@font/mung"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="뭐 넣을지" />
+
+    <Button
+        android:id="@+id/qkedmaButton"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ripple_effect"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="130dp"
+        android:layout_marginRight="15dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/mung"
+        android:textColor="@color/black"
+        android:text="추천받음" />
+
+    <ImageButton
+        android:id="@+id/optionButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right|top"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/gear" />
+
+</FrameLayout>
