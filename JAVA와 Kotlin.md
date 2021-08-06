@@ -35,8 +35,51 @@
   var str = ""; // 변수
   val strVal = ""; // 상수
   ```
-
   
+* view를 사용하는 방법이 다름.
+
+  testText 라는 이름을 가진 view를 이용할 때
+  Java는 객체를 만들어 'findViewById()'함수를 이용해 할당함.
+  ```java
+  text = findViewById(R.id.testText);
+  text.setText("Text");
+  ```
+  
+  Kotlin은 xml파일에서 정의한 id를 그대로 사용함.
+  ```kotlin
+  testText.text = "Text"
+  ```
+  
+ * Null을 체크하는 방법이 다름.
+   
+   Java는 어노테이션(@)을 이용해 Nullable(null 가능, default는 Nullable), NonNull(null 불가능)을 구분함.
+   ```java
+   @Nullable String able = null;
+   @NonNull String non = "";
+   ```
+   
+   Kotlin은 옵셔널(?)을 이용해 구분함. 변수 뒤에 자료형을 붙여주고 ?를 붙이면 null이 가능하고 붙이지 않으면 불가능함.(자바와 다르게
+   default는 NonNull)
+   ```kotlin
+   var able: String? = null
+   var non: String = ""
+   ```
+   
+ * Null을 사용하는 방법이 다름.
+   
+   Java는 if문으로 null인지 아닌지 검사함.
+   ```java
+   able.split("."); // NPE(nullpointerexception) 발생
+   if (able != null){
+      able.split(".");
+   }
+   ```
+   
+   Kotlin은 옵셔널을 이용함.
+   ```kotlin
+   able.split(".") // 빌드가 되지 않음.(NPE 발생)
+   able?.split(".") // 만약 able이 null이면 split() 함수를 실행하지 않음.
+   ```
 
 ## Kotlin의 장점
 
