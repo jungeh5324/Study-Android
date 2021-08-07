@@ -80,6 +80,15 @@
    able.split(".") // 빌드가 되지 않음.(NPE 발생)
    able?.split(".") // 만약 able이 null이면 split() 함수를 실행하지 않음.
    ```
+ * kotlin은 세미 콜론을 문장 끝에 붙이지 않음.
+ 
+ * kotlin은 변수 타입과 메서드 리턴 타입이 이름 뒤 콜론에 나옴.
+   
+   ```kotlin
+   fun main(args: Array<String>){
+       ....
+   }
+   ```
 
 ## Kotlin의 장점
 
