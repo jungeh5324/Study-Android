@@ -108,7 +108,7 @@
 
   Kotlin
 
-  ```k
+  ```kotlin
   System.out.print("Hello World");
   ```
 
